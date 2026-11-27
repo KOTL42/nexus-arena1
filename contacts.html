@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронь и контакты — NEXUS ARENA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="gallery.html" class="nav__link">Галерея</a>
+        <a href="contacts.html" class="nav__link active">Бронь и контакты</a>
+      </nav>
+      <button class="btn btn--outline" data-open-modal>Быстрая бронь</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Бронирование и контакты</h1>
+
+        <div class="contacts-grid">
+          <div class="card">
+            <h2 class="card__title mb-16">Забронировать ПК или буткемп</h2>
+            <form class="form" id="pageBookingForm">
+              <label class="label">Имя или игровой никнейм
+                <input type="text" class="input" name="username" placeholder="Например: Shadow" required>
+              </label>
+              <label class="label">Телефон для связи
+                <input type="tel" class="input" name="phone" placeholder="+7 (999) 123-45-67" required>
+              </label>
+              <label class="label">Выберите зону
+                <select class="input" name="zone">
+                  <option value="Standard Zone">Standard Zone — 150 ₽/час</option>
+                  <option value="Bootcamp 5x5">Bootcamp 5x5 — 220 ₽/час</option>
+                  <option value="VIP Duo">VIP Duo — 300 ₽/час</option>
+                </select>
+              </label>
+              <label class="label">Дата и время визита
+                <input type="datetime-local" class="input" name="datetime" required>
+              </label>
+              <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+            </form>
+          </div>
+
+          <div class="contacts-info">
+            <div class="card mb-24">
+              <h2 class="card__title mb-12">Как нас найти</h2>
+              <p class="card__text mb-8"><strong>Адрес:</strong> г. Москва, ул. Тверская, д. 12, цокольный этаж</p>
+              <p class="card__text mb-8"><strong>Режим работы:</strong> Круглосуточно, 24/7</p>
+              <p class="card__text mb-16"><strong>Телефон:</strong> +7 (495) 000-24-07</p>
+
+              <div class="socials">
+                <a href="https://t.me/" target="_blank" rel="noopener" class="social-link">Telegram</a>
+                <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link">VK</a>
+                <a href="https://discord.com/" target="_blank" rel="noopener" class="social-link">Discord</a>
+              </div>
+            </div>
+
+            <div class="map-box">
+           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa97bcfa59a715843f97ae05b55e377f27b59ede6ec612137b5a170c1a754ae4&amp;source=constructor" 
+           width="500" 
+           height="400" 
+           frameborder="0">
+          </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+        <p class="footer__copy">© 2026 NEXUS ARENA. Все права защищены.</p>
+      </div>
+      <div class="socials">
+        <a href="https://t.me/" target="_blank" rel="noopener" class="social-link">Telegram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link">VK</a>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="social-link">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="bookingModal">
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h3 class="modal__title">Быстрое бронирование</h3>
+      <p class="modal__subtitle">Оставьте контакты — администратор закрепит за вами ПК.</p>
+      <form class="form" id="modalForm">
+        <input type="text" class="input" name="username" placeholder="Ваш никнейм или имя" required>
+        <input type="tel" class="input" name="phone" placeholder="+7 (999) 000-00-00" required>
+        <select class="input" name="zone">
+          <option value="Standard Zone">Standard Zone (150 ₽/ч)</option>
+          <option value="Bootcamp 5x5">Bootcamp 5x5 (220 ₽/ч)</option>
+          <option value="VIP Duo">VIP Duo (300 ₽/ч)</option>
+        </select>
+        <button type="submit" class="btn btn--primary btn--full">Подтвердить бронь</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal__box modal__box--center">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <div class="success-icon">✓</div>
+      <h3 class="modal__title">Заявка принята!</h3>
+      <p class="modal__subtitle" id="successText">Мы забронировали место и свяжемся с вами в течение 5 минут.</p>
+      <button class="btn btn--primary" data-close-modal>Отлично</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

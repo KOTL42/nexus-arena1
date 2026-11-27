@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — NEXUS ARENA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="gallery.html" class="nav__link active">Галерея</a>
+        <a href="contacts.html" class="nav__link">Бронь и контакты</a>
+      </nav>
+      <button class="btn btn--outline" data-open-modal>Быстрая бронь</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Галерея клуба</h1>
+        <p class="section__desc">Атмосфера игровых залов, буткемп-комнат и зона отдыха.</p>
+
+        <div class="slider" id="clubSlider">
+          <div class="slider__track">
+            <div class="slide active">
+              <img src="images/slide1.jpg" alt="Главный зал Standard">
+              <div class="slide__caption">
+                <h3>Главный игровой зал</h3>
+                <p>30 мощных станций с мониторами 280 Гц</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/slide2.jpg" alt="Буткемп комната">
+              <div class="slide__caption">
+                <h3>Буткемп-комната 5x5</h3>
+                <p>Полная звукоизоляция для командных тренировок</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/slide3.jpg" alt="Лаунж зона">
+              <div class="slide__caption">
+                <h3>Лаунж-зона и PS5</h3>
+                <p>Отдых между катками на большом 4K-экране</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--prev" id="prevSlide" aria-label="Назад">&#8592;</button>
+          <button class="slider__btn slider__btn--next" id="nextSlide" aria-label="Вперёд">&#8594;</button>
+          <div class="slider__dots" id="sliderDots"></div>
+        </div>
+
+        <div class="grid grid--3 mt-40">
+          <div class="gallery-item">
+            <img src="images/gallery1.jpg" alt="Периферия">
+            <span>Периферия Logitech G Pro</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery2.jpg" alt="VIP зона">
+            <span>VIP-комната для двоих</span>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery3.jpg" alt="Бар">
+            <span>Энергетики и снеки</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+        <p class="footer__copy">© 2026 NEXUS ARENA. Все права защищены.</p>
+      </div>
+      <div class="socials">
+        <a href="https://t.me/" target="_blank" rel="noopener" class="social-link">Telegram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link">VK</a>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="social-link">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="bookingModal">
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h3 class="modal__title">Быстрое бронирование</h3>
+      <p class="modal__subtitle">Оставьте контакты — администратор закрепит за вами ПК.</p>
+      <form class="form" id="modalForm">
+        <input type="text" class="input" name="username" placeholder="Ваш никнейм или имя" required>
+        <input type="tel" class="input" name="phone" placeholder="+7 (999) 000-00-00" required>
+        <select class="input" name="zone">
+          <option value="Standard Zone">Standard Zone (150 ₽/ч)</option>
+          <option value="Bootcamp 5x5">Bootcamp 5x5 (220 ₽/ч)</option>
+          <option value="VIP Duo">VIP Duo (300 ₽/ч)</option>
+        </select>
+        <button type="submit" class="btn btn--primary btn--full">Подтвердить бронь</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal__box modal__box--center">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <div class="success-icon">✓</div>
+      <h3 class="modal__title">Заявка принята!</h3>
+      <p class="modal__subtitle" id="successText">Мы забронировали место и свяжемся с вами в течение 5 минут.</p>
+      <button class="btn btn--primary" data-close-modal>Отлично</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS ARENA — Киберспортивный клуб</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link active">Главная</a>
+        <a href="gallery.html" class="nav__link">Галерея</a>
+        <a href="contacts.html" class="nav__link">Бронь и контакты</a>
+      </nav>
+      <button class="btn btn--outline" data-open-modal>Быстрая бронь</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__tag">24/7 CYBERSPORT SPACE</p>
+        <h1 class="hero__title">Максимальный FPS.<br>Чистый фокус на игре.</h1>
+        <p class="hero__subtitle">Топовое железо, изолированные буткемп-комнаты и минималистичная атмосфера без лишнего шума.</p>
+        <div class="hero__actions">
+          <a href="contacts.html" class="btn btn--primary">Забронировать место</a>
+          <a href="gallery.html" class="btn btn--ghost">Смотреть залы</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Преимущества клуба</h2>
+        <div class="grid grid--4">
+          <div class="card">
+            <span class="card__num">01</span>
+            <h3 class="card__title">Мониторы 360 Гц</h3>
+            <p class="card__text">Минимальный отклик матрицы для соревновательных шутеров.</p>
+          </div>
+          <div class="card">
+            <span class="card__num">02</span>
+            <h3 class="card__title">Пинг от 2 мс</h3>
+            <p class="card__text">Выделенный оптоволоконный канал с резервированием линии.</p>
+          </div>
+          <div class="card">
+            <span class="card__num">03</span>
+            <h3 class="card__title">Тишина и климат</h3>
+            <p class="card__text">Акустические панели и приточная вентиляция в каждом зале.</p>
+          </div>
+          <div class="card">
+            <span class="card__num">04</span>
+            <h3 class="card__title">Ночные пакеты</h3>
+            <p class="card__text">Выгодные тарифы с 22:00 до 08:00 и напитки в лаунж-зоне.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">
+      <div class="container divider__inner">
+        <span>RTX 4080 SUPER</span>
+        <span class="divider__dot">•</span>
+        <span>CORE i7-14700K</span>
+        <span class="divider__dot">•</span>
+        <span>32 GB DDR5</span>
+        <span class="divider__dot">•</span>
+        <span>1 GBPS INTERNET</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Игровые зоны и конфигурации</h2>
+        <div class="zero-block">
+          <div class="zero-block__controls">
+            <button class="zone-tab active" data-zone="standard">STANDARD ZONE</button>
+            <button class="zone-tab" data-zone="bootcamp">BOOTCAMP 5x5</button>
+            <button class="zone-tab" data-zone="vip">VIP DUO</button>
+          </div>
+
+          <div class="zero-block__stage">
+            <div class="zero-block__info">
+              <span class="zero-block__badge" id="zonePrice">150 ₽ / час</span>
+              <h3 class="zero-block__heading" id="zoneTitle">Открытый зал Standard</h3>
+              <p class="zero-block__desc" id="zoneDesc">30 посадочных мест с широкими столами 140 см, креслами с поясничной поддержкой и периферией Logitech G Pro.</p>
+              <button class="btn btn--primary" data-open-modal>Выбрать этот тариф</button>
+            </div>
+            <div class="zero-block__floating-card">
+              <div class="spec-row"><span>Видеокарта</span><strong id="specGpu">RTX 4070 Ti</strong></div>
+              <div class="spec-row"><span>Монитор</span><strong id="specMonitor">24.5" 280 Hz</strong></div>
+              <div class="spec-row"><span>Девайсы</span><strong id="specGear">Logitech G Pro X</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Этапы посещения</h2>
+        <div class="grid grid--4">
+          <div class="step">
+            <div class="step__circle">1</div>
+            <h3 class="step__title">Выбор тарифа</h3>
+            <p class="step__text">Определись с залом и временем игровой сессии.</p>
+          </div>
+          <div class="step">
+            <div class="step__circle">2</div>
+            <h3 class="step__title">Онлайн-бронь</h3>
+            <p class="step__text">Оставь заявку на сайте за пару кликов без предоплаты.</p>
+          </div>
+          <div class="step">
+            <div class="step__circle">3</div>
+            <h3 class="step__title">Регистрация</h3>
+            <p class="step__text">Получи клубный аккаунт на ресепшене за 1 минуту.</p>
+          </div>
+          <div class="step">
+            <div class="step__circle">4</div>
+            <h3 class="step__title">Старт игры</h3>
+            <p class="step__text">Садись за ПК — все популярные лаунчеры уже установлены.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Команда клуба</h2>
+        <div class="grid grid--3">
+          <div class="team-card">
+            <div class="team-card__photo">
+              <img src="images/team1.jpg" alt="Алексей Громов">
+            </div>
+            <h3 class="team-card__name">Алексей Громов</h3>
+            <p class="team-card__role">Управляющий и турнирный директор</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__photo">
+              <img src="images/team2.jpg" alt="Мария Соколова">
+            </div>
+            <h3 class="team-card__name">Мария Соколова</h3>
+            <p class="team-card__role">Старший администратор</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__photo">
+              <img src="images/team3.jpg" alt="Дмитрий Волков">
+            </div>
+            <h3 class="team-card__name">Дмитрий Волков</h3>
+            <p class="team-card__role">Системный инженер</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="logo">NEXUS<span>//</span>ARENA</a>
+        <p class="footer__copy">© 2026 NEXUS ARENA. Все права защищены.</p>
+      </div>
+      <div class="socials">
+        <a href="https://t.me/" target="_blank" rel="noopener" class="social-link">Telegram</a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="social-link">VK</a>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="social-link">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="bookingModal">
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <h3 class="modal__title">Быстрое бронирование</h3>
+      <p class="modal__subtitle">Оставьте контакты — администратор закрепит за вами ПК.</p>
+      <form class="form" id="modalForm">
+        <input type="text" class="input" name="username" placeholder="Ваш никнейм или имя" required>
+        <input type="tel" class="input" name="phone" placeholder="+7 (999) 000-00-00" required>
+        <select class="input" name="zone">
+          <option value="Standard Zone">Standard Zone (150 ₽/ч)</option>
+          <option value="Bootcamp 5x5">Bootcamp 5x5 (220 ₽/ч)</option>
+          <option value="VIP Duo">VIP Duo (300 ₽/ч)</option>
+        </select>
+        <button type="submit" class="btn btn--primary btn--full">Подтвердить бронь</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal__box modal__box--center">
+      <button class="modal__close" data-close-modal>&times;</button>
+      <div class="success-icon">✓</div>
+      <h3 class="modal__title">Заявка принята!</h3>
+      <p class="modal__subtitle" id="successText">Мы забронировали место и свяжемся с вами в течение 5 минут.</p>
+      <button class="btn btn--primary" data-close-modal>Отлично</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
